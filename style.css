@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+    
+    }
+    
+h2, h3, b{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+p, h4{
+    font-family: 'Karla', sans-serif;
+}
+.ham{
+    display: none;
+    border: none;
+    background: none;
+    margin-right: 4%;
+    width: 25px;
+}
+.mobileMenu{
+    padding-top: 18%;
+    background-color: hsl(270, 9%, 17%);
+    text-align: center;
+    display: none;
+    color: white;
+    padding-bottom: 7%;
+    
+}
+#plan{
+    border: 1.5px solid white;
+    padding: 10px 65px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+   
+   }
+#plan:hover{
+       color: white;
+       background-color: hsl(256, 26%, 20%);
+   }
+.mobileMenu li{
+    padding: 3.5%;
+    font-size: 16px;
+}
+.ham button{
+    border: none;
+    background: none;
+}
+.ham img{
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 100px;
+    padding-block: 10px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+}
+.logo{
+    padding-inline: 9px;
+    padding-top: 7px;
+}
+nav ul li{
+    float: left;
+   padding: 10px 25px;
+   list-style: none;
+   font-family: 'Karla', sans-serif;
+   font-weight: 700;
+}
+
+li a{
+    text-decoration: none;
+    color: hsl(216, 30%, 68%);
+}
+li a:hover{
+    color: hsl(256, 26%, 20%);
+}
+li #plans{
+ border: 1.5px solid hsl(256, 26%, 20%);
+ padding: 11px 38px;
+ color: hsl(256, 26%, 20%);
+ font-family: 'Karla', sans-serif;
+   font-weight: 700;
+
+}
+li #plans:hover{
+    color: white;
+    background-color: hsl(256, 26%, 20%);
+}
+.top{
+    background-color: hsl(256, 26%, 20%);
+}
+.bg-leftD{
+    position: absolute;
+    left: 0%;
+   top: 59%;
+   z-index: 1;
+   width: 15%;
+}
+.bg-leftD img{
+    width :100%;
+}
+#bg-rightD{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+    padding: 0;
+}
+.bg-rightD img {
+    width: 28%;
+}
+.bg-leftM , .bg-rightM{
+    display: none;
+}
+.intro{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 40%;
+}
+.intro img{
+    width: 100%;
+}
+#topText{
+    background-color: hsl(256, 26%, 20%) ;
+    width: 100%;
+    padding: 70px 20px;
+    position: relative;
+    padding-top: 6%;
+}
+.texts{
+    width: 40%;
+    padding-block: 2%;
+    margin-left: 8%;
+}
+.texts hr{
+    width: 35%;
+    margin-bottom: 12%;
+    margin-top: 4%;
+}
+#topText b{
+font-size: 60px;
+line-height: 55px;
+color: white;
+font-weight: 400;
+}
+#topText p{
+    font-size: 16px;
+    padding-bottom: 5%;
+    padding-top: 7%;
+    line-height: 21px;
+    color: white;
+
+}
+.top button{
+    background-color:hsl(256, 26%, 20%) ;
+    border: 1px solid white;
+ padding: 11px 38px;
+ color: white;
+ font-family: 'Karla', sans-serif;
+   font-weight: 700;
+
+   
+} 
+.top button:hover{
+    background-color: white ;
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+.different{
+    padding: 30px 150px;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+.different hr{
+    width: 10%;
+    margin-bottom: 3%;
+}
+.different h2{
+    font-size: 47px;
+}
+.icons{
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons div{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+.icons img{
+    width: 22%;
+}
+.icons h3{
+padding: 6% 0% 3% 0%;
+font-size: 25px;
+}
+.icons p{
+font-size: 15px;
+color: hsl(216, 15%, 57%);
+line-height: 23px;
+}
+.how-we-work{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: hsl(256, 26%, 20%);
+    padding: 4.5% 7% ;
+    padding-top: 4.5%;
+    font-size: 35px;
+    margin-inline: 12%;
+}
+.how-we-work h3{
+    color: white;
+    font-size: 49px;
+    line-height: 100%;
+}
+
+
+.work{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 37%;
+}
+.work img{
+    width: 100%;
+}
+.how-we-work button{
+    background-color:hsl(256, 26%, 20%) ;
+    border: 1px solid white;
+ padding: 11px 36px;
+ color: white;
+ font-family: 'Karla', sans-serif;
+   font-weight: 700;
+   align-self: center;
+   z-index: 1;
+}
+.how-we-work button:hover{
+    background-color: white ;
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+.workM{
+    display: none;
+}
+footer{
+    position: relative;
+    background-color: hsl(0, 0%, 98%);
+    padding-bottom: 40px;
+    padding-inline: 6%;
+    padding-block: 35px;
+    margin-inline: 6.5%;
+    margin-top: 10%;
+}
+.footer-top{
+    padding: 2% 1%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.social-icons{
+    width: 17%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.social-icons img:hover{  
+    cursor: pointer;
+}
+footer hr{
+    width: 100%;
+    padding-inline: 2%;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-top: 3.5%;
+}
+h4{
+    padding-bottom: 25%;
+    font-weight: 500;
+    font-size: 14px;
+    color:hsl(216, 11%, 54%) ;
+}
+footer p{
+    padding-block: 2%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+}
+footer p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+}
+.footer-bg img{
+    width: 100%;
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+
+/* media quaries */
+@media (max-width: 768px) {
+header{
+    padding-inline: 15px;
+}
+nav ul li{
+   padding: 10px 15px;
+}
+.logo{
+    padding-inline: 7px;
+}
+#topText b{
+font-size: 40px;
+line-height: 30px;
+}
+#topText p{
+font-size: 14px;
+line-height: 19px;
+}
+.different{
+    padding: 30px 50px;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+.different h2{
+    font-size: 35px;
+}
+.icons h3{
+    padding: 6% 0% 3% 0%;
+    font-size: 20px;
+}
+.icons p{
+    font-size: 13px;
+    color: hsl(216, 15%, 57%);
+    line-height: 23px;
+}
+nav li a{
+    font-size: 15px;
+}
+.how-we-work{
+    padding: 4.5% 7% ;
+    font-size: 35px;
+    margin-inline: 5%;
+    
+}
+.how-we-work h3{
+    font-size: 44px;
+}
+.work{
+    width: 39.5%;
+}
+
+
+
+footer{
+    padding-inline: 6%;
+    padding-block: 35px;
+    margin-inline: 4.5%;
+}
+.social-icons{
+    width: 27%;
+}
+
+.footer-bottom{
+    margin-right: 9%;
+    margin-top: 3.5%;
+}
+.footer h4{
+    padding-bottom: 20%;
+    font-size: 14px;
+}
+footer p{
+    padding-block: 1.5%;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+}
+
+@media (max-width: 425px) {
+    #desktop{
+        display: none;
+    }
+ .ham{
+        display: block;
+        
+    }
+
+.intro{
+    position: relative;
+    width: 100%;
+   right: 0;
+    top: 0;
+
+}
+.top{
+     display: flex;
+     flex-direction: column-reverse;
+}
+.bg-leftD , .bg-rightD{
+    display: none;
+}
+#topText{
+    text-align: center;
+}
+.texts{
+    width: 100%;
+    padding-block: 15%;
+    margin-left: 0;
+    padding-inline: 2%;
+}
+.texts hr{
+    display: none;
+}
+#topText b{
+    font-size: 55px;
+    line-height: 45px;
+}
+#topText p{
+    font-size: 15px;
+    line-height: 25px;
+}
+.different{
+   text-align: center;
+    padding: 65px 0px;
+    
+}
+.different h2{
+    margin-bottom: 5%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.icons div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 10% ;
+    padding-block: 3%;
+    margin-top: 5%;
+    align-items: center;
+}
+.icons img{
+    width: 21%;
+}
+.icons h3{
+padding: 6% 0% 3% 0%;
+font-size: 25px;
+}
+.icons p{
+font-size: 15px;
+color: hsl(216, 15%, 57%);
+line-height: 23px;
+}
+.different hr{
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 37%;
+    
+}
+.how-we-work{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding: 15% 10% ;
+    margin-inline: 0;
+    overflow: hidden; 
+}
+.how-we-work h3{
+    font-size: 45px;
+    margin-bottom: 8%;
+}
+
+
+.work{
+   display: none;
+}
+
+.workM{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 46%;
+}
+.workM img{
+    width: 100%;
+}
+footer{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-inline: 10%;
+}
+.footer-top{
+    flex-direction: column;
+  padding-block: 10% ;
+    margin-top: 20%;
+}
+.footer-bottom{
+    flex-direction: column;
+    margin: 0;
+}
+.social-icons{
+    width: 100%;
+    padding-inline: 25% ;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+.footer-bottom div{
+    margin-block: 3%;
+    padding-block: 3%;
+}
+.footer-bottom h4{
+    padding-bottom: 5%;
+    font-size: 14px;
+}
+footer p{
+    padding-block: 1.5%;
+    font-size: 13px;
+    line-height: 23px;
+}
+}
