@@ -242,6 +242,9 @@ line-height: 23px;
 .work img{
     width: 100%;
 }
+.mobile li a{
+    color: white;
+}
 .how-we-work button{
     background-color:hsl(256, 26%, 20%) ;
     border: 1px solid white;
