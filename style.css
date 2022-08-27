@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 *{
-    padding: 0;
+    padding: 0; 
     margin: 0;
     box-sizing: border-box;
 }
@@ -27,12 +27,28 @@ p, h4{
     width: 25px;
 }
 .mobileMenu{
-    padding-top: 18%;
+    padding-top: 10%;
     background-color: hsl(270, 9%, 17%);
     text-align: center;
-    display: none;
+    /* display: none ; */
+    /* height: 0; */
+    width: 100%;
+    z-index: 1;
+    /* top: -100000%; */
+    top: 49px;
+    /* height: 100vh; */
+    left: -100%;
+    position: absolute;
     color: white;
     padding-bottom: 7%;
+
+        justify-content: center;
+        align-items: center;
+        
+        /* top: 0; */
+        
+        /* z-index: -3; */
+        transition: 0.5s;
     
 }
 #plan{
@@ -60,6 +76,7 @@ p, h4{
     width: 100%;
 }
 header{
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-inline: 100px;
@@ -72,6 +89,9 @@ header{
 .logo{
     padding-inline: 9px;
     padding-top: 7px;
+}
+nav{
+    z-index: 10;
 }
 nav ul li{
     float: left;
